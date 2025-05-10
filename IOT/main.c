@@ -66,7 +66,7 @@ int main(void) {
     printf("subscribed to %s \n", topic);
 
     // payload the content of your message
-    char* payload = "tempval";
+    char* payload = "1";
     int payloadlen = strlen(payload);
     MQTTClient_deliveryToken dt;
     MQTTClient_publish(client, topic, payloadlen, payload, qos, retained, &dt);
